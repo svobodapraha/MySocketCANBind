@@ -1,5 +1,6 @@
 #ifndef PROCESSCANMESSAGE_H
 #define PROCESSCANMESSAGE_H
+#include <stdint.h>
 
     typedef struct XMC_LMOCan
     {
