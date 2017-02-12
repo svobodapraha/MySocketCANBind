@@ -67,7 +67,8 @@ MainWindow::MainWindow(QWidget *parent) :
     struct sockaddr_can addr;
     struct ifreq ifr;
     addr.can_family = AF_CAN;
-    strcpy(ifr.ifr_name, "vcan0");
+    //strcpy(ifr.ifr_name, "vcan0");  //virtual can
+    strcpy(ifr.ifr_name, "can0");   //real can
 
     if (ioctl(iCanSocId, SIOCGIFINDEX, &ifr) < 0)
     {
