@@ -1,2 +1,3 @@
 9:25 1.2.2017
 popis
+Test příchozích zpráv  - zda nemizí...
